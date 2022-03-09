@@ -1,0 +1,19 @@
+.pagination {
+  display: flex;
+  list-style-type: none;
+}
+
+.page-item {
+  padding: 0.2rem 0.5rem;
+  border: rgb(81, 81, 212) 1.1px solid;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.page-item > a {
+  text-decoration: none;
+}
+
+.page-item:hover {
+  background-color: rgb(175, 175, 175);
+}

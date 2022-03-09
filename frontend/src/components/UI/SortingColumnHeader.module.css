@@ -1,0 +1,13 @@
+th {
+  border: 1px solid #ffffff;
+  text-align: left;
+  padding: 8px;
+  font-size: 12px;
+  background-color: rgb(117, 201, 250);
+  display: table-cell;
+  justify-items: center;
+}
+
+.icon {
+  padding: 0 5px;
+}

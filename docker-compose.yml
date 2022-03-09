@@ -1,0 +1,11 @@
+services:
+  flask_backend:
+    build: ./backend
+    ports:
+      - "5000:5000"
+    command: gunicorn -w 1 -b :5000 main:app
+  react_frontend:
+    build: ./frontend
+    ports:
+      - "3000:3000"
+    command: npm start

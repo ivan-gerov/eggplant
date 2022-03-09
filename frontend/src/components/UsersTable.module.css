@@ -1,0 +1,26 @@
+#filter {
+  margin: 1rem;
+}
+
+table {
+  border-collapse: collapse;
+  margin-left: 1rem;
+}
+
+td {
+  border: 1px solid #ffffff;
+  text-align: left;
+  padding: 8px;
+  font-size: 12px;
+  background-color: rgb(205, 235, 253);
+}
+
+:global(.no-select) {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Old versions of Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none;
+  cursor: pointer;
+}
