@@ -5,9 +5,9 @@ from app.api import api
 from app import config
 
 
-def create_app():
+def create_app(config=config.Config):
     app = Flask(__name__)
-    app.config.from_object(config.Config)
+    app.config.from_object(config)
     app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = False
     app.config["CORS_HEADERS"] = "Content-Type"
     CORS(app)

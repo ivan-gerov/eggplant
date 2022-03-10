@@ -1,4 +1,5 @@
 import os
+
 # from dotenv import dotenv_values
 
 # # This will break for non venv users
@@ -20,9 +21,9 @@ class DevelopmentConfig(Config):
 
     DEBUG = True
     DEVELOPMENT = True
-    # SQLALCHEMY_DATABASE_URI = ENV_CONFIG_FILE["DATABASE_URL"]
-    # ENV = ENV_CONFIG_FILE["ENV"]
 
 
 class TestingConfig(Config):
+    """Testing config object"""
+
     TESTING = True

@@ -31,9 +31,7 @@ def list_users():
 @api.route("/api/v1/user", methods=["POST"])
 def add_user():
     """Adds a new user to the database and returns it back"""
-    # breakpoint()
     user_data = request.get_json()
-    print(user_data)
     user_schema = UserSchema()
     user = user_schema.load(user_data).create()
     serialized_user = serialize_models(model=user)
